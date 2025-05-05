@@ -1,0 +1,101 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cores base */
+:root {
+    --purple: #7f00ff;
+    --black: #121212;
+    --white: #ffffff;
+}
+
+/* Body geral */
+body {
+    background-color: var(--black);
+    color: var(--white);
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+}
+.logo{
+    width:300px;
+    height: auto;
+    margin: 0 auto 20px auto;
+    display:flex;
+}
+/* Header */
+header { 
+    background: linear-gradient(90deg, var(--purple), #4b0082);
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: white;
+}
+
+nav {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s;
+    
+}
+
+nav a:hover {
+    color: rgb(253, 155, 250);
+}
+
+/* Main */
+main {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+main h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: purple;
+}
+
+/* Gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.gallery img,
+.gallery video {
+    width: 100% ;
+    height: auto;
+    border-radius: 15px;
+    border: 2px solid var(--purple);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery img:hover,
+.gallery video:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px var(--purple);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #1a1a1a;
+    font-size: 0.9rem;
+    color: #888;
+}
